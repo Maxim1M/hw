@@ -23,6 +23,13 @@
 }
 
 .nav {
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
 }
 
 .nav a {
@@ -32,6 +39,17 @@
 }
 
 .nav a.active {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    /* identical to box height */
+
+    text-decoration-line: underline;
+
+    color: #0059B2;
+
 }
 .close {
 }
