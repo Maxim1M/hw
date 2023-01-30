@@ -12,7 +12,7 @@ import SuperRange from './common/c7-SuperRange/SuperRange'
 
 function HW11() {
     // for autotests // не менять // можно подсунуть в локалСторэдж нужные числа, чтоб увидеть как они отображаются
-    const [value1, setValue1] = useState(restoreState<number>('hw11-value1', 0))
+    const [value1, setValue1] = useState(restoreState<number>('hw11-value1', 50))
     const [value2, setValue2] = useState(restoreState<number>('hw11-value2', 100))
 
     const change = (event: Event, value: number | number[]) => {
@@ -20,7 +20,7 @@ function HW11() {
             setValue1(value[0])
             setValue2(value[1])
         } else {
-            setValue1(value)
+            setValue1(+value)
         }
         // пишет студент // если пришёл массив - сохранить значения в оба useState, иначе в первый
     }
@@ -36,7 +36,7 @@ function HW11() {
                         <SuperRange
                             id={'hw11-single-slider'}
                             onChange={change}
-                            valueLabelDisplay={"auto"}
+                            // valueLabelDisplay={"auto"}
                             value={value1}
                             // сделать так чтоб value1 изменялось // пишет студент
 
